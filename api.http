@@ -1,0 +1,63 @@
+### Variables
+@baseUrl = http://localhost:8081/api/v1/users
+@userId = 6
+
+### 1. Create a New User (Successful Validation)
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "username": "Mani",
+    "email": "Mani@example.com",
+    "status": "ACTIVE"
+}
+
+
+### 2. Create a New User
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "username": "Hello",
+    "email": "hello@test.com",
+    "status": "ACTIVE"
+}
+
+
+### 3. Create a New User
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "username": "Ravi",
+    "email": "ravi@test.com",
+    "status": "INACTIVE"
+}
+
+
+### 3. Get All Users
+GET {{baseUrl}}
+Accept: application/json
+
+
+### 4. Get User By ID (Assuming ID 1 exists)
+GET {{baseUrl}}/{{userId}}
+Accept: application/json
+
+
+### 5. Get User By ID (Testing 404 Custom Exception)
+# This test request will trigger your ResourceNotFoundException layout.
+GET {{baseUrl}}/999
+Accept: application/json
+
+
+
+### Update an Existing User
+PUT {{baseUrl}}/{{userId}}
+Content-Type: application/json
+
+{
+  "username": "New User",
+  "email": "user111@example.com",
+  "status": "INACTIVE"
+}
