@@ -2,7 +2,7 @@
 
 A robust **Spring Boot** RESTful CRUD application for managing users, featuring a multi-instance Docker deployment with MySQL persistence. Demonstrates best practices in containerization, health checks, service dependencies, and scalable microservice-style architecture.
 
-![Java](https://img.shields.io/badge/Java-17-ED8B00?logo=openjdk&logoColor=white)
+![Java](https://img.shields.io/badge/Java-25-ED8B00?logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?logo=spring&logoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-3.x-C71A36?logo=apache-maven&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-8.x-4479A1?logo=mysql&logoColor=white)
