@@ -46,7 +46,6 @@ Content-Type: application/json
 
 
 ### 5. Get User By ID (Testing 404 Custom Exception)
-# This test request will trigger your ResourceNotFoundException layout.
 GET {{baseUrl}}/999
 Content-Type: application/json
 
