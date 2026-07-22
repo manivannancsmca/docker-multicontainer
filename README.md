@@ -1,3 +1,4 @@
+
 # Spring Boot User CRUD API With Docker Multiple Container
 
 A robust **Spring Boot** RESTful CRUD application for managing users, featuring a multi-instance Docker deployment with MySQL persistence. Demonstrates best practices in containerization, health checks, service dependencies, and scalable microservice-style architecture.
@@ -193,6 +194,7 @@ docker system prune -a --volumes -f
 ## 🔧 Development
 
 ### Local Development (without Docker)
+
 ```bash
 ./mvnw spring-boot:run
 ```
